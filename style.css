@@ -213,21 +213,25 @@
     justify-content: center;
     margin-top:70px;
     flex-wrap: wrap;
+    
 }
 .cards__1{
     width:1200px;
     margin-top: 10px;
+    width: fit-content;
+    
+    
 }
 .cards__1 p{
     margin-top: 10px;
-    color:grey
+    color:grey;
 }
 .cards__2{
     display:flex;
     gap:25px;
-    width:1200px;
-    justify-content: space-between;
     
+    justify-content: space-between; 
+    flex-wrap: wrap;  
     
 }
 
@@ -237,6 +241,8 @@
     border-radius: 5px;
     height:280px;
     width:280px;
+    display: flex;
+    
 }
 div h4{
     margin-top: 5px;
@@ -286,31 +292,35 @@ div h4{
 .explore{
     background-color: antiquewhite;
     height:400px;
-    margin-top:100px;
+    margin-top:100px;  
     display:flex;
+    flex-wrap: wrap;    
     justify-content: center;
-    
 }
 .explore__1{
-    width:1200px;
-
-    margin-top:20px;
+    margin-left: 140px;
+    display:flex;
+    flex-direction: column;
+    padding-top: 1px;
 }
 .explore__1 h2{
     width:1200px;
+    margin-top:20px;
 }
 .explore__1 img{
     width:350px;
     height:250px;
     margin-top: 20px;
     border-radius: 20px;
-
 }
 
 .explore__2{
     display:flex;
-    gap:20px;
+    gap:40px;
     justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 120px;
+    width: fit-content;
 }
 .exp1{
     justify-content: center;
@@ -472,4 +482,12 @@ div h4{
 .log img{
     height:40px;
     width:40px;
+}
+
+
+/*responsive*/
+@media screen and (max-width:1000px){
+    .navbar__s2{
+        display:none;
+    }
 }
