@@ -294,7 +294,7 @@ div h4{
     height:400px;
     margin-top:100px;  
     display:flex;
-    flex-wrap: wrap;    
+      
     justify-content: center;
 }
 .explore__1{
@@ -318,7 +318,7 @@ div h4{
     display:flex;
     gap:40px;
     justify-content: center;
-    flex-wrap: wrap;
+    
     padding-right: 120px;
     width: fit-content;
 }
@@ -337,6 +337,7 @@ div h4{
     display:flex;
     gap:5px;
     position:relative;
+    flex-wrap: wrap;
 }
 .cities__1 p{
     color:grey;
@@ -424,6 +425,8 @@ div h4{
     margin-top: 60px;
     background-color: bisque;
     position: relative;
+    display:flex;
+    flex-wrap: wrap;
 }
 .footer__1{
     position: absolute;
@@ -450,6 +453,7 @@ div h4{
     margin-left: 1000px;
     gap:20px;
     display:flex;
+    flex-wrap: wrap;
 }
 .footer__3 select{
     width:150px;
@@ -489,5 +493,43 @@ div h4{
 @media screen and (max-width:1000px){
     .navbar__s2{
         display:none;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .heading{
+        display:none;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .footer{
+        display:flex;
+        flex-direction: column;
+        gap:20px;
+        align-items: center;
+        
+        
+    }
+}
+
+
+
+@media screen and (max-width:600px){
+    .navbar{
+        font-size:12px;
+    }
+}
+@media screen and (max-width:600px){
+    .navbar__s3 button{
+        font-size:12px;
+        width:80px;
+        height:35px;
+    }
+}
+@media screen and (max-width:600px){
+    .navbar__s1 img{
+        width:40px;
+        height:40px;
     }
 }
